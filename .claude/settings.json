@@ -1,0 +1,49 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -m http.server 8931 >/tmp/http.log 2>&1 & *)",
+      "Bash(mkdir -p /private/tmp/claude-501/-Users-karanveerghorela-Desktop-qtpcr/878c2f41-21dd-4a57-8d47-fdfebe2e654c/scratchpad/shots)",
+      "Bash(\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --headless --disable-gpu --screenshot=/private/tmp/claude-501/-Users-karanveerghorela-Desktop-qtpcr/878c2f41-21dd-4a57-8d47-fdfebe2e654c/scratchpad/shots/full.png --window-size=1600,1200 --hide-scrollbars --virtual-time-budget=4000 --default-background-color=00000000 http://localhost:8931/index.html)",
+      "Bash(sips -g pixelWidth -g pixelHeight full2.png)",
+      "Bash(\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --headless --disable-gpu --screenshot=hero_1920.png --window-size=1920,1080 --hide-scrollbars --virtual-time-budget=4000 http://localhost:8931/index.html)",
+      "Bash(\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --headless --disable-gpu --screenshot=hero_1440.png --window-size=1440,900 --hide-scrollbars --virtual-time-budget=4000 http://localhost:8931/index.html)",
+      "Bash(\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --headless --disable-gpu --screenshot=full_1920.png --window-size=1920,5200 --hide-scrollbars --virtual-time-budget=4000 http://localhost:8931/index.html)",
+      "Bash(sips -g pixelHeight full_1920.png)",
+      "Bash(sips -c 900 1920 --cropOffset 1080 0 full_1920.png --out crop_national.png)",
+      "Bash(\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --headless --disable-gpu --screenshot=full_1920b.png --window-size=1920,7500 --hide-scrollbars --virtual-time-budget=20000 http://localhost:8931/index.html)",
+      "Bash(sips -g pixelHeight full_1920b.png)",
+      "Bash(npx --yes playwright --version)",
+      "Bash(ls ~/Library/Caches/ms-playwright 2>/dev/null || echo \"none\")",
+      "Read(//Users/karanveerghorela/Library/Caches/**)",
+      "Bash(time curl -s -o /dev/null http://localhost:8931/assets/sunil-cake.jpg)",
+      "Bash(time curl -s -o /dev/null http://127.0.0.1:8931/assets/team.jpg)",
+      "Bash(cd /private/tmp/claude-501/-Users-karanveerghorela-Desktop-qtpcr/878c2f41-21dd-4a57-8d47-fdfebe2e654c/scratchpad/pw *)",
+      "Bash(timeout 90 node shot.js)",
+      "Bash(node shot.js)",
+      "Bash(sips -g pixelHeight /private/tmp/claude-501/-Users-karanveerghorela-Desktop-qtpcr/878c2f41-21dd-4a57-8d47-fdfebe2e654c/scratchpad/pw/full.png)",
+      "Bash(sips -c 1600 1920 --cropOffset 1650 0 full.png --out crop_national.png)",
+      "Bash(sips -c 1500 1920 --cropOffset 3150 0 full.png --out crop_cert.png)",
+      "Bash(sips -c 2200 1920 --cropOffset 6500 0 full.png --out crop_gallery.png)",
+      "Bash(sips -c 1300 1920 --cropOffset 3550 0 full.png --out crop_cert2.png)",
+      "Bash(sips -c 1300 1920 --cropOffset 5000 0 full.png --out crop_cert3.png)",
+      "Bash(sips -c 1400 1920 --cropOffset 7300 0 full.png --out crop_gallery2.png)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://127.0.0.1:8931/assets/sunil-cake.jpg)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://127.0.0.1:8931/assets/sunil-friends.jpg)",
+      "Bash(sips -c 1400 1920 --cropOffset 7300 0 full2.png --out crop_gallery3.png)",
+      "Bash(curl -s http://127.0.0.1:8931/assets/sunil-cake.jpg -o test-cake.jpg)",
+      "Bash(curl -s http://127.0.0.1:8931/assets/sunil-friends.jpg -o test-friends.jpg)",
+      "Bash(node shot2.js)",
+      "Bash(sips -g pixelHeight full2.png)",
+      "Bash(kill -9 64391 64389)",
+      "Bash(sips -g pixelHeight -g pixelWidth full2.png)",
+      "Bash(sips -c 1080 1920 --cropOffset 0 0 full2.png --out v_hero.png)",
+      "Bash(node shot3.js)",
+      "Bash(sips -g pixelHeight full3.png)",
+      "Bash(sips -c 1080 1920 --cropOffset 0 0 full3.png --out v_hero.png)",
+      "Bash(node -e ' *)"
+    ],
+    "additionalDirectories": [
+      "/tmp"
+    ]
+  }
+}
